@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: lightgray;
+  width: 915px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main-container .item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.main-container .item .infos-container h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 42px;
+  margin: 25px 0;
+}
+
+.main-container .item .infos-container p {
+  line-height: 25px;
+}
+
+.main-container .item button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 40px;
+  padding: 10px 0px;
+  width: 145px;
+  border: solid 2px white;
+  font-size: inherit;
+}
+
+.main-container .item button:hover {
+  cursor: pointer;
+}
+
+.main-container #item-1 {
+  background-color: #e38826;
+}
+
+.main-container #item-1 button {
+  color: #e38826;
+}
+
+.main-container #item-1 button:hover {
+  background-color: #e38826;
+  color: white;
+}
+
+.main-container #item-2 {
+  background-color: #006970;
+}
+
+.main-container #item-2 button {
+  color: #006970;
+}
+
+.main-container #item-2 button:hover {
+  background-color: #006970;
+  color: white;
+}
+
+.main-container #item-3 {
+  background-color: #004241;
+}
+
+.main-container #item-3 button {
+  color: #004241;
+}
+
+.main-container #item-3 button:hover {
+  background-color: #004241;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

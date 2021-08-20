@@ -1,0 +1,107 @@
+$font-1: 'Lexend Deca', sans-serif;
+$font-2: 'Big Shoulders Display', cursive;
+
+$bright_orange: hsl(31, 77%, 52%);
+$dark_cyan: hsl(184, 100%, 22%);
+$very_dark_cyan: hsl(179, 100%, 13%);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} // reset
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} // body
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    background: lightgray;
+    width: 915px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .item {
+        box-sizing: border-box;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        font-family: $font-1;
+        font-size: 15px;
+        color: white;
+
+        .infos-container {
+
+            h1 {
+                font-family: $font-2;
+                text-transform: uppercase;
+                font-size: 42px;
+                margin: 25px 0;
+            } // h1
+
+            p {
+                line-height: 25px;
+            } // p
+        } // .infos-container
+
+        button {
+            box-sizing: border-box;
+            border-radius: 40px;
+            padding: 10px 0px;
+            width: 145px;
+            border: solid 2px white;
+            font-size: inherit;
+
+            &:hover {
+                cursor: pointer;
+            } // button:hover
+        } // button
+    } // .item
+
+    #item-1 {
+        background-color: $bright_orange;
+
+        button {
+            color: $bright_orange;
+
+            &:hover {
+                background-color: $bright_orange;
+                color: white;
+            } // button:hover
+        } // button
+    } // #item-1
+
+    #item-2 {
+        background-color: $dark_cyan;
+
+        button {
+            color: $dark_cyan;
+
+            &:hover {
+                background-color: $dark_cyan;
+                color: white;
+            } // button:hover
+        } // button
+    } // #item-2
+
+    #item-3 {
+        background-color: $very_dark_cyan;
+
+        button {
+            color: $very_dark_cyan;
+
+            &:hover {
+                background-color: $very_dark_cyan;
+                color: white;
+            } // button:hover
+        } // button
+    } // #item-3
+} // .main-container
