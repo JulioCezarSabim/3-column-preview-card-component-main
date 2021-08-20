@@ -113,7 +113,7 @@ body {
     } // .main-container
 }
 
-@media (min-width: 915px) {
+@media (min-width: 915px) and (min-height: 500px) {
     body {
         height: 100vh;
     } // body
